@@ -17,13 +17,9 @@ public class MemberController {
 	private MemberService memberService;
 	
 	@RequestMapping(value="/admin/member", method=RequestMethod.GET)
-	public ModelAndView list() {
-		ModelAndView mav=new ModelAndView();
+	public List list() {
 		List memberList=memberService.selectAll();
-		mav.setViewName("admin/member/index");
-		mav.addObject("memberList", memberList);
-		System.out.println(mav);
-		
-		return mav;
+
+		return memberList;
 	}
 }

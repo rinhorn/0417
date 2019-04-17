@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="game.model.domain.Master" alias="Master" />
+		<typeAlias type="game.model.domain.Game" alias="Game" />
+		<typeAlias type="game.model.domain.Member" alias="Member" />
+		<typeAlias type="game.model.domain.Category" alias="Category" />
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="game/mybatis/mapper/MasterMapper.xml" />
+		<mapper resource="game/mybatis/mapper/GameMapper.xml" />
+		<mapper resource="game/mybatis/mapper/MemberMapper.xml" />
+		<mapper resource="game/mybatis/mapper/CategoryMapper.xml" />
+	</mappers>
+</configuration>
